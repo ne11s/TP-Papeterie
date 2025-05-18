@@ -3,8 +3,8 @@ package org.example.Classes;
 public class Stylo extends ArticleUnitaire {
     private String couleur;
 
-    public Stylo(String nom, double prix, String couleur) {
-        super(nom, prix);
+    public Stylo(String nom, double prix, String couleur,String ref) {
+        super(nom, prix,ref);
         this.couleur= couleur;
     }
 

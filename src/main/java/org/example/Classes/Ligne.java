@@ -3,10 +3,12 @@ package org.example.Classes;
 public class Ligne {
     private ArticleUnitaire article;
     private int quantite;
+    private double remis;
 
-    public Ligne(ArticleUnitaire article, int quantite) {
-        this.article = article;
+    public Ligne(String ref, int quantite) {
+        this.article = ;
         this.quantite = quantite;
+
     }
 
 

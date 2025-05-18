@@ -1,21 +1,15 @@
 package org.example.Classes;
 
 public class Article {
-    private static int nbrArticle;
-    private int ref;
 
+    private String ref;
 
-    public Article() {
-        this.ref = ++nbrArticle;
+    public Article(String ref) {
+        this.ref = ref;
     }
 
-    public int getRef() {
+    public String getRef() {
         return this.ref;
-    }
-
-
-    public static int getNbrArticle() {
-        return nbrArticle;
     }
 
 }

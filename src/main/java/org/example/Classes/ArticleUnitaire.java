@@ -4,8 +4,8 @@ public class ArticleUnitaire extends Article {
     private String nom;
     private double prix;
 
-    public ArticleUnitaire(String nom, double prix) {
-        super();
+    public ArticleUnitaire(String nom, double prix,String ref) {
+        super(ref);
         this.nom = nom;
         this.prix = prix;
     }
@@ -25,4 +25,5 @@ public class ArticleUnitaire extends Article {
     public void setPrix(double prix) {
         this.prix = prix;
     }
+
 }
