@@ -5,8 +5,8 @@ public class Lot extends Article{
     private int quantite;
     private int remise;
 
-    public Lot( ArticleUnitaire article, int quantite, int remise) {
-        super();
+    public Lot( ArticleUnitaire article, int quantite, int remise, String ref) {
+        super(ref);
         this.article = article;
         this.quantite = quantite;
         this.remise = remise;
@@ -38,11 +38,11 @@ public class Lot extends Article{
 
     @Override
     public String toString() {
-        return "Lot{" +
-                "article=" + article +
-                ", quantite=" + quantite +
-                ", remise=" + remise +
-                "%, prix="+ article.getPrix()*remise/100+
+        return "Lot{ " +
+                "article= " + article +
+                ", quantite= " + quantite +
+                ", remise= " + remise +
+                "%, prix= "+ (article.getPrix()*quantite)*(100-remise)/100+
                 "€}";
     }
 }

@@ -3,8 +3,8 @@ package org.example.Classes;
 public class Ramette extends ArticleUnitaire {
     private String gramage;
 
-    public Ramette(String nom, double prix, String gramage) {
-        super(nom, prix);
+    public Ramette(String nom, double prix, String gramage,String ref) {
+        super(nom, prix, ref);
         this.gramage = gramage;
     }
     public String getCouleur() {
