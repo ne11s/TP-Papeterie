@@ -1,6 +1,6 @@
 package org.example.Classes;
 
-public class Article {
+public abstract class Article {
 
     private String ref;
 
@@ -10,6 +10,14 @@ public class Article {
 
     public String getRef() {
         return this.ref;
+    }
+
+    public String getNom(){
+        return "";
+    }
+
+    public double getPrix(){
+        return 1;
     }
 
 }

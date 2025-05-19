@@ -1,12 +1,12 @@
 package org.example.Classes;
 
 public class Ligne {
-    private ArticleUnitaire article;
+    private Article article;
     private int quantite;
     private double remis;
 
     public Ligne(String ref, int quantite) {
-        this.article = ;
+        this.article = Articles.getArticleParRef(ref);
         this.quantite = quantite;
 
     }
